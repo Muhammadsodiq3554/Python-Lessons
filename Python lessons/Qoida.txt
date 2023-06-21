@@ -1,0 +1,139 @@
+Operatorlar o'zgaruvchilar va qiymatlar bo'yicha Operatsiyalarni amalga oshirishga foydalaniladi. Misol uchun: + operatori ikkita 
+qiymatni bir-biriga qo'shishga qo'llaniladi.
+
+Pythonda operatorlar quyidagilarga bo'linadi:
+1.Arithmetic operators;
+2.Assignment operators;
+3.Comparision operators;
+4.Logical operators;
+5.Identity operators;
+6.Membership operators;
+7.Birwise operators.
+
+Arifmetik operatorlar umumiy matematik amallarni bajarish uchun ishlatiladi.
+
+Oerator  |	Vazifasi		   | 	Example
+___________________________________________
+  +      |	Qo'shish       	   |	x+y
+  -      |	Ayirish   		   |	x-y			
+  *      |	Ko'paytirish    	   |	x*y
+  /      |	Bo'lish		   |	x/y
+  %      |	Modul			   |	x%y
+  **     |	Darajaga ko'tarish   |	x**y
+  //     |	Butun qismini olish  |	x//y
+  =	   |	Tenglik		   |	x=5
+  +=	   |	x+=3			   |	x=x+3
+  -=	   |	x-=3			   |	x=x-3
+  *=	   |	x*=3			   |	x=x*3
+  /=	   |	x/=3			   |	x=x/3
+  %=	   |	x%=3			   |	x=x%3
+  //=    |	x//=3			   |	x=x//3
+  **=	   |	x**=3			   |	x=x**3
+  <<=    |	x<<=3			   |	x=x<<3
+  >>=    |	x>>=3			   |	x=x>>3
+  &=	   |   x&=3			   |	x=x>>3
+  |=	   |	x|=3			   |	x=x|3
+  ^=	   |	x^=3			   |	x=x^3
+  !=	   |	x!=3			   |	x=x!3
+  ==     |	x==3			   |	x=x==3
+  ~=     |	x~=3			   |	x=x~3
+
+Membership operatorlar ketma-ketligini tekshirish uchun ishlatiladi.
+in: 
+
+not in: agar obyektda ko'rsatilgan bo'lmasa, bizga False chiqarib beradi
+
+Tuple,set,dictionary
+Listlar [	] qavslar bilan tuziladi
+Masalan: list= ["ruchka", "qalam", "marker"]
+         print(list)
+Listlar asosan bitta o'zgaruvchida bir nechta qiymat saqlash uchun ishaltiladi
+List elementlari tartiblangan o'zgarishi mumkin va takroriy qiymatlarga ruxsat beradi
+Ro'yxat elementlari indekslanadi va birinchi element indeksi - 0, ikkinchi element indeksi - 1     
+Masalan: list["ruchka", "qalam", "marker"]
+         print(list[1])
+bunda qalamni chiqarib beradi.
+Listlar indekslangani sababli ro'yxatlar birxil qiymatlarga ega bo'lishishi mumkin.
+type buyrug'i orqali listimizni qaysi turga mosligini aniqlashimiz mumkin
+yangi ro'yxat tuzishda list() buyrug'idan foydalanamiz
+listlarda indekslarning qayerdan boshlab qaterda tugashini ko'rsatib berishimiz mumkin.
+cars=["lamborhini", "Bugatti", "ferrari", "Mclaren"]
+print(cars[1:4])
+print(cars[:4]): boshidan belgilangan joygacha choqarib beradi.
+print(cars[-3:-1]) bo'lsa teskari hisoblaydi
+ro'yxatda maxsus element bor-yo'qligi aniqlash uchun int kalit so'zidan foydalanamiz
+Agar siz almashtirgandan ko'ra kamroq element qo'shsangiz, yangi elementlar siz ko'rsatgan joyga kiritiladi, qolganlari mos joylarga tushadi
+Listga oxiriga element qo'shish uchun append() ni ishlatamiz
+setdagi elementlar tartibsiz ozgartirib bolmaydigon va takroriy qiymatga yol qolib bolmaydi
+setni uzunligini aniqlash uchun len funksasiyasidan foydalanilamiz
+set elementlarni qoshish mumkin uning uchun add () funksiyasidan foydalanamiz
+clear () ichidagi tolaligica ocirish uchun foydalanilamiz
+intersection_update() metodi bizaga to'plamdagi mavjud bo'lgan elementlarni olish uchun foydalanamiz
+Dictionaries - ma'lumot qiymatlarini kalit so'zda saqlash u-n ishlatiladi: juft qiymat.
+Dictionaries - unordered (tartibga bo'linmagan , changeable (o'zgartirib bo'lmaydigan ) , do not duplicate (takrorlanishga ruxsat bermaydigan)
+Dictionaries - {} b-n yoziladi. Qiymat va kalit b-n yoziladi.
+Lug'atdagi elementlar qiymat juftligida taqdim etiladi va kalit orqali biz murojaat qilishimiz mumkin.
+values() qiymatlar
+items() metodi dictda har bir elementni bizaga qaytarib beradi
+update() metodi dictdagi elementlarni yangilab beradi
+Dictdagi elementlarni o'chirish uchun pop(); clear(); del; popitem()
+elif kondishinal vazifasi if da kiritilgan shartni tekshirib olishimiz uchun elif funksiyasini ishlatamiz
+loops—sizning kodingizda shartlarni takrorlashga imkon beradi
+loop — doira degani.
+Pythonda eng keng tarqalgan loop bu for loop hisoblanadi.
+For loop obyekt ustida ustida takrorlanmaguncha kod blockni bajaradi.
+Bu boshqa dasturlash tillaridagi kalit sozga oxshamaydi va boshqa obyektga yonaltirilgan dasturlash tillarida bolgan kabi iterator usuliga oxshaydi. 
+For loop yordamida biz ro'yxatdagi har bir element uchun bir marta toqlash ornatish va bir qator iboralarni bajarish mumkin. 
+Break steadment bilan barcha elementlarni loop orqali bajariladigan jarayonni toxtatishimiz mumkin
+Continue  statementi bilan  biz Loopning takroriy jarayonini toxtatib keyingisi bilan davom ettirishimiz mumkin.
+BU misolda  print(i) breakdan yuqorida bo'lsa barcha elemntlarni oladi, agar pastda bo'lsa o'sha elemtdan bitta oldingi elementgacha oladi
+a=["Chevrolet","Lamborghini","mustang"]
+for x in a:
+      if x=="Lamborghini":
+            continue
+      print(x)
+Misol uchun: Bunda Lamborghini sozi tushib qoladi.
+Range funksiyasini vazifasi: Belgilangan miqdordagi kodlar toplamini bir necha marta ifodalashimiz uchun Range funksiyasidan foydalanamiz.
+Range funksiyasi raqamlar ketma-ketligini qaytaradi standart boyicha 0dan boshlanadi va bittaga ortadi va belgilangan son bilan tugaydi.
+for i in range(25):
+print(i)
+bu misolda 0dan boshlanib 24 gacha sonlar olinadi.
+Range funksiyasi boshlang'ich qiymat sifatida 0 dan boshlanadi lekin parametr qo'shish orqali boshlang'ich qiymatini belgilashimiz mumkin.
+e.g: for i in range(3,6):
+        print(i)
+Bu misolda boshlang'ich qiymatini oladi va oxirgi qiymatini olmaydi.
+3,4,5
+Range funksiyasi ketma ketlikni bittaga oshiradi lekin uchinchi parametr qo'shish orqali qiymatini oshirib olishimiz mumkin.
+e.g:for i in range(5,10,2):
+    print(i)
+Belgilangan miqdordagi kodlar toplaminibir necha martta ifodalashimiz uchun RAnge funksiyasidan foydalanamiz. Range funksiyasi raqamlar ketma ketligini qaytaradi  standard boyich  0 dan boshlanadi va  1 ga orttadi va belgilangan sonda tuagaydi.
+Range funksiyasi boshlangich qiymati sifatida 0 dan boshlanadi , lekin parametr qoshish orqali  boshlangich qiymatini belgilashimiz mumkin.
+Range funksiyasi ketma - ketligini bittaga oshiradi  lekin uchinchi parametr qoshish orqali qiymatini oshirib olishimiz mumkin.
+Funcion - ma'lum bir vazifani bajaradigan buyruqlar guruhi.
+Funcionlar bizning dasturimizni kichikroq va modullik bo'laklarga bo'lib beradi.
+Bizning dasturimiz kattalashib borgan sari funksiyalar o'sha dasturni yanada birlashtiradi va boshqarib bo'ladigan qilib beradi.
+Funksiyalar takrorlanishni oldini oladi va kodni qayta ishlatishga yordam beradi.
+Siz parametr sifatida ma'lum bo'lgan ma'lumotlarni functionga o'tkazib berish mumkin va  natijada ma'lumotlarni qaytarib beradi.
+Function yozib olishimiz uchun def funksiyasidan foydalanamiz.
+Ma'lumotni argument funksiyasiga o'tkazishimiz mumkin.
+Argumentlar funksiya nomidan keyin qavs ichida ko'rsatiladi va ularni vergul (,) begisi orqali xoxlagancha qo'shish mumkin.
+Argumentlar python hujjatlarida args qisqartmasi bilan chaqiriladi
+Parametr va argument bu ikkalasi pachti bir xil ya'ni ma'lumot uzatish uchun ishlatiladi.
+Funksiyaga ko'ra argument - function chaqirilganda yuboriladigan qiymat.
+Parametr esa function nomlangandan keyin qavs ichida ko'rsatadigan o'zgaruvchi.
+Funksiyani to'g'ri argumentlar soni bilan chaqirishimiz kerak.
+Agar siz funksiyamizda ikkita parametr e'lon qilgan bo'lsak, argument undan kam ham emas ko'p ham bo'lmasligi kerak.
+Agar siz funksiyaga qancha argument qo'shishni bilmasangiz, funksiya parametr nomidan oldin yulduzcha (*) belgisini qo'yishimiz kerak.
+Funksiya bir nechta argumentlarni tuplelarini oladi va shunga mos ravishda elementlarga murajaat qila oladi.
+1. Arbitary argument (Ixtiyoriy argument)
+2. Keyword argument (Kalitso'z argument)
+key=value qiymatida yuboroshimiz mumkin 
+Agar siz qancha keyword argument kiritishni bilmasangiz parametr oldidan ikkita yulduzcha (**__) qo'yishimiz kerak.
+Shunday qilib funksiya argumentlarning "dictionary"ni qabul qila oladi va elementlarga murojaat qila olishi mumkin.
+Quyidagi misolda standart parametr qiymatidan qanday qilib foydalanishni ko'rsatib beradi.
+Agar biz funksiyani argumentsiz chaqirsak u standart valuedan foydalanadi.
+quydagi  misolda standard parametirdan foydalanish korsatilingan agar biz funksiyani argumentsiz foydalansak  u standard parametirdan foydalanadi
+Biz har qanday argumentlarni funksiyaga yuborishimiz mumkin va bu funksiya ichida bir xil ma'lumotlar turiga kiriladi.
+agar siz listimizni argument sifatida yuborsez u finksiyamizga yetib borsa ham shunaqa list bo'lib qoladi.
+Funksiyada qiymat qaytarish uchun return keyword kalit so'zidan foydalanamiz.
+Funksiyaga berilgan nom bosh bolishi kerak emas Agar biron bir sababga kora funksiya nomiga ega bolmasa  pass funksiyasidan foydalanamiz.
